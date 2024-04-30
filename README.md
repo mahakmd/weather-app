@@ -27,9 +27,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 
-
-![Uploading weather-app.png…]()
-
-
-
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+- ![weather-app](https://github.com/mahakmd/weather-app/assets/84460481/812c21cb-bcae-4999-bc92-4573080c6aa4)
+
