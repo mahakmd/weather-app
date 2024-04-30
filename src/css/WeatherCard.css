@@ -1,0 +1,110 @@
+:root{
+    --body-background: #0D3A5F;
+    --card-background : radial-gradient(circle at 10% 20%, rgb(7, 121, 222) 0%, rgb(20, 72, 140) 90%);
+    --box-shadow-- : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --text-color--white: #fff;
+}
+
+body{
+    background-color: var(--body-background);
+    font-family: sans-serif;
+    color: var(--text-color--white);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    margin: 50px auto;
+    background: var(--card-background);
+    height: 550px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow--);
+    position: relative;
+    
+}
+.weather-container{
+    margin-inline: 2rem;
+}
+
+.header{
+    justify-content: space-between;
+}
+.search-box{
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    margin-right: 1rem;
+    outline: none;
+}
+
+.search-box:focus{
+    outline: 2px solid #93C5FD;
+}
+
+.search-button{
+    border: none;
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.search-button:hover{
+    border: 2px solid #93C5FD;
+}
+.Highlight{
+    justify-content: space-between;
+}
+.icon{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.Highlight-box{
+    justify-content: space-between;
+}
+.temp{
+    font-size: 2rem;
+}
+.img-weather{
+    filter: drop-shadow(#c3c3c3 0px 0px 12px);
+}
+.weather-card{
+    flex-direction: column;
+    margin: 2.5rem 0;
+}
+.loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    animation: fadeInAnimation ease-in 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.error{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    text-transform: capitalize;
+    
+}
